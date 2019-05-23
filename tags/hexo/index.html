@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>关于git提交代码 | 同乐的博客</title>
+  <title>Tag: hexo | 同乐的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="以下步骤是基于我公司的环境，你可以参考使用。   首先要从git服务器下载digioceanfs_manager管理系统源代码必须现在git服务器上添加自己的ssh密钥，配置好密钥再去下载代码1git clone ssh://zhoutongle@10.10.1.13:29418/MGMT">
-<meta name="keywords" content="git">
-<meta property="og:type" content="article">
-<meta property="og:title" content="关于git提交代码">
-<meta property="og:url" content="http://yoursite.com/2019/05/22/关于git提交代码/index.html">
+  <meta name="description" content="许昌学院12级电信学院电子信息工程，目前程序员一枚.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="同乐的博客">
+<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
 <meta property="og:site_name" content="同乐的博客">
-<meta property="og:description" content="以下步骤是基于我公司的环境，你可以参考使用。   首先要从git服务器下载digioceanfs_manager管理系统源代码必须现在git服务器上添加自己的ssh密钥，配置好密钥再去下载代码1git clone ssh://zhoutongle@10.10.1.13:29418/MGMT">
+<meta property="og:description" content="许昌学院12级电信学院电子信息工程，目前程序员一枚.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-22T09:36:54.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于git提交代码">
-<meta name="twitter:description" content="以下步骤是基于我公司的环境，你可以参考使用。   首先要从git服务器下载digioceanfs_manager管理系统源代码必须现在git服务器上添加自己的ssh密钥，配置好密钥再去下载代码1git clone ssh://zhoutongle@10.10.1.13:29418/MGMT">
+<meta name="twitter:title" content="同乐的博客">
+<meta name="twitter:description" content="许昌学院12级电信学院电子信息工程，目前程序员一枚.">
   
     <link rel="alternative" href="/atom.xml" title="同乐的博客" type="application/atom+xml">
   
@@ -159,242 +157,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于git提交代码" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      关于git提交代码
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/05/14/换电脑继续更新用hexo和github搭建的blog/" class="archive-article-date">
+  	<time datetime="2018-05-14T06:56:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-14</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/05/14/换电脑继续更新用hexo和github搭建的blog/">换电脑继续更新用hexo和github搭建的blog</a>
     </h1>
   
 
-        
-        <a href="/2019/05/22/关于git提交代码/" class="archive-article-date">
-  	<time datetime="2019-05-22T03:28:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p><strong>以下步骤是基于我公司的环境，你可以参考使用。</strong></p>
-</blockquote>
-<ol>
-<li>首先要从git服务器下载digioceanfs_manager管理系统源代码必须现在git服务器上添加自己的ssh密钥，配置好密钥再去下载代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone ssh://zhoutongle@10.10.1.13:29418/MGMT</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<a id="more"></a>
-<ol>
-<li><p>这里提交的时候需要拷贝glusterfs的一个文件到当前项目.git/hooks/目录下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp ~/glusterfs/.git/hooks/commit-msg   /root/MGMT/.git/hooks/ </span><br><span class="line">chmod +x commit-msg</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置好身份认证后，去创建一个自己bug的分支</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b bug_branch_name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置好ssh密钥后，现在去配置身份认证</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name &quot;zhoutongle&quot;</span><br><span class="line">git config user.email &quot;zhoutongle@estor.com.cn&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>然后去修改自己要修改的代码文件</p>
-</li>
-<li><p>add添加文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . </span><br><span class="line">or</span><br><span class="line">git add *</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>commit已经add的文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -s</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果继续修改这个文件再次 commit</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -s --amend</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>然后将commit的代码push到远端。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin HEAD:refs/for/CentOS-7-X86/rfc</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@node-1 MGMT]# git branch -a    显示所有分支</span><br><span class="line">  CentOS-7-X86</span><br><span class="line">  master</span><br><span class="line">* test</span><br><span class="line">  remotes/origin/2.0</span><br><span class="line">  remotes/origin/C7-devel</span><br><span class="line">  remotes/origin/CentOS-7-ARM</span><br><span class="line">  remotes/origin/CentOS-7-X86</span><br><span class="line">  remotes/origin/HEAD -&gt; origin/master</span><br><span class="line">  remotes/origin/master</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout  CentOS-7-X86  切换到分支CentOS-7-X86</span><br><span class="line">git checkout -b test  创建分支test在 CentOS-7-X86</span><br><span class="line">git reset --hard ff648831a9547afb2d6e96213760d445aeb9e514</span><br></pre></td></tr></table></figure>
-<ol>
-<li>如果出现：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR: missing Change-Id in commit message footer</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>直接在命令行加入报错的红色部分，再按照一下步骤来就ok了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitdir=$(git rev-parse --git-dir); scp -p -P 29418 zhoutongle@10.10.1.13:hooks/commit-msg $&#123;gitdir&#125;/hooks/</span><br></pre></td></tr></table></figure></p>
-<ol>
-<li>下载一份代码，修改之后提交代码，不小心把代码删除了，而无法进行追加提交的问题。<br>重新下载代码，下载补丁:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard 90792628c1bd03c0245813057cfee361cae80094    （commit）</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>翻滚到之前的版本。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin CentOS-7-X86</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>合并的分支产生冲突问题。<br>当你提交的代码后，管理员发现，您的代码不能提交到服务器上，主要原因在于，你的commit 中和服务器中的有些commit不再同一时间轴上，即：你的有些commit要插入到服务器中的某些commit之间，这样就会造成代码的冲突。所以这个 时候就要使用git rebase。<br>假如，你平时使用的分支叫 new ，然后在这个分支上你刚提交过几个commit。<br>做法：</p>
-<ol>
-<li><p>新建一个分支，并且代码和服务器中代码同步</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout origin/v2.0 -b temp</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>为了保证新建的temp分支代码是最新的，可以多执行下面一步</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>当你新建分支后，系统会自动checkout到temp分支上，此时</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout  new</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>合并代码，并整理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase  temp  //会将temp分支的代码合并过来，并按照提交的顺序排序</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>因为顺序是重新整理的，所以肯定会出现冲突</p>
-</li>
-<li><p>解决冲突，最后 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br></pre></td></tr></table></figure>
-<p>，但不需要</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>解决后，执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase --continue</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重新提交代码： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push for-</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-</ol>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/22/关于git提交代码/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2018/05/14/换电脑继续更新用hexo和github搭建的blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">换电脑继续更新用hexo和github搭建的blog</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -417,9 +233,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
